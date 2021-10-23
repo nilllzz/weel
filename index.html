@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Weel</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h1>Weel</h1>
+        <div class="board">
+            <div id="game" class="game">
+                <span class="pointer">▽</span>
+                <canvas id="target" width="200" height="200"></canvas>
+            </div>
+
+            <div id="list" class="list">
+            </div>
+
+            <div class="charge">
+                <div id="charger" class="charger"></div>
+            </div>
+        </div>
+        <button id="spin-btn" class="btn" onmousedown="chargeMouseDown()" onmouseup="chargeMouseUp()">
+            <b>
+                <marquee>SPIN</marquee>
+            </b>
+        </button>
+
+        <div class="result-container">
+            <div id="result"></div>
+            <button id="remove-result-btn" style="display: none;" onclick="removeLastResult()">
+                Remove from Weel
+            </button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

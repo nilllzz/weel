@@ -1,0 +1,73 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 600px;
+}
+
+.board {
+	display: flex;
+	align-items: center;
+}
+
+.game {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	align-items: center;
+}
+
+.btn {
+	margin-top: 20px;
+	width: 100px;
+}
+
+.list {
+	margin-left: 24px;
+	width: 160px;
+}
+
+.list-item {
+	margin-bottom: 8px;
+}
+
+.list-item * {
+	vertical-align: middle;
+}
+
+.colorSq {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	margin-right: 8px;
+}
+
+.charge {
+	position: relative;
+	height: 180px;
+	width: 20px;
+	background-color: gray;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	margin-left: 24px;
+}
+
+.charger {
+	background: linear-gradient(#c7fe01, #327f71);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.result-container {
+	margin-top: 24px;
+}
