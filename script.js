@@ -79,9 +79,24 @@ function addSlicesToList() {
 	const list = document.getElementById("list");
 	list.innerHTML = "";
 
+	const addedSlices = [];
+
 	for (const slice of slices) {
+		// Don't add duplicate slices to the list.
+		if (
+			addedSlices.find(
+				(i) =>
+					slice.color === i.color &&
+					slice.text === i.text &&
+					slice.size === i.size
+			)
+		) {
+			continue;
+		}
+
 		const item = getSliceOutput(slice);
 		list.appendChild(item);
+		addedSlices.push(slice);
 	}
 }
 
